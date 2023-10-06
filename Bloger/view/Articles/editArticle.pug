@@ -1,0 +1,15 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="../../styles/editAr.css")
+        title Edit
+
+    body 
+        form(action=`/article/edit/${myArticles.id}`, method="post")
+            label(for="title")
+            input(type="text", name="title" , value=myArticles.title)
+            label(for="text")
+            input(type="text", name="text" , value= myArticles.text)
+            input(type="submit", value="Save Changes")

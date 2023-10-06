@@ -1,0 +1,16 @@
+header
+  nav
+    ul
+      li
+        a(href="/")      Home
+      li
+        if user.email
+          a(href="/Article")      My Article
+      li
+        a(href="/Article")      Articles
+      li
+        if user.email
+          h5 Bonjour #{user.email}
+            a(href="/logout") Logout
+        else
+          a(href="/login") Login

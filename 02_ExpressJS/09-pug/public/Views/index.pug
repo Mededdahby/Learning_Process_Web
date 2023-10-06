@@ -1,0 +1,36 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title=user.email
+    link(rel="stylesheet", href="../styles/style.css")
+    link(rel="stylesheet", href="../styles/header.css")
+
+  body
+    include header.pug
+
+    if user.email
+      h3 Bonjour #{user.email}
+    h2 Votre score est : #{user.score}
+
+    main
+      .container
+        .item
+          h2 Recent Articles:
+          .item
+            ul
+              li 
+                h3 #{articles[0].title}
+                h4 #{articles[0].text}
+                p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum autem tenetur enim facilis, temporibus molestiae, corrupti inventore similique et sequi deleniti? Aliquam ipsum quos dolorum tenetur dignissimos maiores, non blanditiis.
+            - let str = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi<i> provident</i> nihil architecto quidem eveniet reprehenderit tenetur <b>consequatur</b> tempore unde tempora! Optio ab perferendis, vero perspiciatis doloremque ut sint dolores harum."
+            p !{str}
+            p #{str}
+
+            - let art = articles.find(e => e.id == 3)
+            h3 this is a new article #{art.title}
+            each articl in articles 
+              h1= articl.title
+
+    include footer.pug

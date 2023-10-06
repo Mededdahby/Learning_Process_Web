@@ -1,0 +1,45 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="../styles/style.css")
+        script.
+            function toggleText(articleId) {
+                var excerpt = document.getElementById(`excerpt-${articleId}`);
+                var fullText = document.getElementById(`full-text-${articleId}`);
+                excerpt.style.display = 'none';
+                fullText.style.display = 'block';
+            }
+        title Home
+    body 
+        header    
+            nav
+                ul
+                    li
+                        a(href="/")  Home
+                    li
+                        if user.name
+                            a(href="/article/myArticles")      My Article
+                    li
+                        a(href="/article")      Articles
+                    li
+                        if admin.name 
+                            a(href="/users")  Users    
+                    li
+                        if user.name 
+                            h5 Bonjour #{user.name}
+                            a(href="/logout") Logout
+                        else
+                            a(href="/login") Login
+        .data
+            h1 Recent Articles
+        ul
+            each art in articles
+                article.articles
+                    #article-container
+                        h4= art.title
+                        h5(id=`excerpt-${art.id}`)  !{art.text.substr(0, 10) + '...'}
+                        a(href="javascript:void(0);", onclick=`toggleText('${art.id}')`) Read More
+                        div.full-text(id=`full-text-${art.id}`, style="display: none;")
+                            p=art.text

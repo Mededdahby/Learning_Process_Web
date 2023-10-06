@@ -1,0 +1,30 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Document
+        link(rel="stylesheet", href="../../styles/users.css")
+
+    body 
+        h1 list of users: 
+        a(href=`/users/add`) ADD new users 
+        table.table
+            tr
+                th id
+                th name
+                th email
+                th password
+                th Actions
+
+            tbody
+            each user in users
+                tr
+                    td #{user.id}
+                    td #{user.name}
+                    td #{user.email}
+                    td #{user.password}
+                    td 
+                        form(action=`users/delete/${user.id}` , method="post") 
+                            button(type="submit") Delete
+

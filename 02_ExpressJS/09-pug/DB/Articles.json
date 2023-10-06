@@ -1,0 +1,25 @@
+[
+    {
+        "id": 1,
+        "authorID": 1,
+        "title":"blaBla",
+        "text": "Nta hwa arnold?"
+    },
+    {
+        "id": 2,
+        "authorID": 1,
+        "title":"blaBla",
+        "text": "Nta hwa arnold?"
+    },
+    {
+        "id": 3,
+        "authorID": 1,
+        "title":"blaBla",
+        "text": "Nta hwa arnold?"
+    }, {
+        "id": 4,
+        "authorID": 1,
+        "title":"blaBla",
+        "text": "Nta hwa arnold?"
+    }
+]

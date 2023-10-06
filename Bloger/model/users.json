@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "name": "alexender arnold",
+    "email": "alex@ender.com",
+    "password": "password"
+  },
+  {
+    "id": 2,
+    "name": "Cristien Ronaldo",
+    "email": "CRIS@SUI.com",
+    "password": "SUII"
+  },
+  {
+    "id": 3,
+    "name": "n Ronaldo",
+    "email": "CRIS@SUI.com",
+    "password": "SUII"
+  },
+  {
+    "id": 4,
+    "name": "Korella Shirland",
+    "email": "kshirland1@mozilla.org",
+    "password": "cZ7+cw4i"
+  },
+  {
+    "id": 5,
+    "name": "Mandie Dripps",
+    "email": "mdripps2@woothemes.com",
+    "password": "tI5}RGDX"
+  },
+  {
+    "id": 6,
+    "name": "Sergent Lunk",
+    "email": "slunk3@lycos.com",
+    "password": "uR6\"$>%*mPhs"
+  },
+  {
+    "id": 7,
+    "name": "Darelle Argrave",
+    "email": "dargrave4@intel.com",
+    "password": "gW0#vK/C)n\"B"
+  },
+  {
+    "id": 8,
+    "name": "admin",
+    "email": "admin@admin.com",
+    "password": "123"
+  }
+]

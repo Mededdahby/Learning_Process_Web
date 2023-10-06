@@ -1,0 +1,28 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="../../styles/articles.css")
+        title My Articles
+    body 
+        header    
+            nav
+                ul
+                    li
+                        a(href="/")  Home
+                    li
+                        a(href="/article/myArticles")      My Article
+                    li
+                        a(href="/article")      Articles
+                    li
+                        a(href="/logout") Logout
+        h1 weclome: 
+        ul
+        each article in articles 
+            #article-container
+                li 
+                    h3 #{article.title} 
+                    p !{article.text}
+
+        

@@ -1,0 +1,14 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Document
+    body 
+        form(action="/login", method="post")
+            label(for="email") email 
+            input(type="email" , name="email")
+            label(for="password") password 
+            input(type="password" , name="paswrord")
+            button(type="submit") login
+            a(href="./Register") Register

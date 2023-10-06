@@ -1,0 +1,38 @@
+
+    h1{
+        text-align: center;
+        margin: 25px;
+    }
+     .table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 25px 0;
+            font-size: 14px;
+            font-family: Arial, sans-serif;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Style for table headers (th) */
+        .table th {   
+            background-color: #a17373;
+            padding: 10px;
+            text-align: left;
+            font-weight: bold;
+        }
+
+        /* Style for table rows (tr) */
+        .table tr {
+            background-color: #dacaca;
+            transition: background-color 0.3s ease;
+        }
+
+        /* Hover effect for rows */
+        .table tr:hover {
+            background-color: #21c2c2;
+        }
+
+        /* Style for table data cells (td) */
+        .table td {
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }

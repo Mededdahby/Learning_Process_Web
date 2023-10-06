@@ -1,0 +1,6 @@
+header
+    if user.email
+        h1 Bonjour #{user.email}
+        a(href="/logout") Logout
+    else
+        a(href="/login") Login

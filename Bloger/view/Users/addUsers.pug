@@ -1,0 +1,16 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Document
+    body 
+        h1 Edit users 
+        form(action=`add`, method="post") 
+            label(for="name")
+            input(type="text", name="name") 
+            label(for="email")
+            input(type="email", name="email" )
+            label(for="password")
+            input(type="password", name="password")
+            button(type="submit") Save

@@ -1,0 +1,43 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    link(rel="stylesheet", href="../../styles/myarticles.css")
+
+    title myArticles
+  body 
+    header    
+      nav
+        ul
+          li
+            a(href="/")  Home
+          li
+            a(href="/article/myArticles")      My Article
+          li
+            a(href="/article")      Articles
+          li
+            a(href="/logout") Logout
+    h3 Add new article:
+    form(action="add", method="post") 
+      label(for="title") Title:
+      input(type="text", name="title")
+      br
+      label(for="text") Content:
+      textarea(name="text", cols="30", rows="10") 
+      input(type="submit", value="Add")
+    h3 List of articles:    
+    ul
+      if myArticles
+        each article in myArticles
+          li 
+            h4 #{article.title}
+            p !{article.text}
+            p #{article.authorID}
+            a(href=`/article/edit/${article.id}`) Edit | 
+            a(href=`/article/delete/${article.id}`) Delete
+
+
+
+
+        

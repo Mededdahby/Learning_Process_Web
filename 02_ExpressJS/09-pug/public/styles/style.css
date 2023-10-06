@@ -1,0 +1,57 @@
+/* Colors */
+:root {
+    --color-1: #f26419; /* Header background */
+    --color-2: #f6ae2d; /* Footer background */
+    --color-3: #2f4858; /* Link hover color */
+    --color-4: #86bbd8; /* Submit button color */
+    --color-5: #33658a; /* Form input border color */
+  }
+  
+  /* General styles */
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Header */
+  header {
+    background-color: var(--color-3);
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  nav ul li {
+    margin: 0 15px;
+    display: inline;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  nav ul li a:hover {
+    color: var(--color-3);
+  }
+  main {
+    flex: 1; /* This pushes the footer to the bottom */
+  }
+  /* Footer */
+  footer {
+    background-color: var(--color-3);
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+  }
+
+  
